@@ -2,12 +2,14 @@ from os import listdir, makedirs, path
 from shutil import move
 from logging import basicConfig, info, INFO
 
+# NOTE: The file paths below are an example of what your folder location might look like
+
 # logging configuration
 basicConfig(level=INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Locate the download folder
 download_folder = 'C:\\Users\\terry\\Downloads'
-org_system_folder_names = { # folder_name_shortcut : file_location
+org_system_folder_names = { # folder_name_shortcut : folder_location
     'acr': "C:\\Users\\terry\\OneDrive\\Desktop\\desktop_cleaner\\After College Resources",
     'band': "C:\\Users\\terry\\OneDrive\\Desktop\\desktop_cleaner\\Band",
     'books': "C:\\Users\\terry\\OneDrive\\Desktop\\desktop_cleaner\\Books",
