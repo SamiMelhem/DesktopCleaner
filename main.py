@@ -49,7 +49,7 @@ def insert_files():
         # Removes the leading and trailing quotes from the download folder
         download_folder_clean = download_folder.strip('"')
 
-        file_shortcut = filename.split(' ')[-1].lower()
+        file_shortcut = filename.split(' ')[-1].lower().split('.')[0]
         if file_shortcut in org_system_folder_names.keys():
             folder_path = org_system_folder_names[file_shortcut]
         else: # Insert into lf
